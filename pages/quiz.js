@@ -157,11 +157,13 @@ export default function QuizPage() {
   // atualizado === willUpdate
   // morre === willUnmount
   React.useEffect(() => {
-    fetch('http://localhost:3000/api/db').then(async (res) => {
-      const response = await res.json();
-      setQuestions(response.questions);
-      console.log(questions);
-    });
+    fetch('https://overwatch-quiz.wescastelani.vercel.app/api/db').then(
+      async (res) => {
+        const response = await res.json();
+        setQuestions(response.questions);
+        console.log(questions);
+      }
+    );
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
     }, 1 * 1000);
