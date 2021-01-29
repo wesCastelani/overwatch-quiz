@@ -4,31 +4,57 @@
   "description": "Teste os seus conhecimentos sobre Overwatch",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://overwatch2-static.playoverwatch.com/5247d533591a956bf54ba216fba501ecb081356d/static/images/share.jpg",
+      "title": "Qual a empresa que é dona do jogo?",
       "description": "Essa é pra aquecer",
       "answer": 2,
+      "alternatives": ["Riot", "Garena", "Blizzard", "Ubisoft"]
+    },
+    {
+      "image": "https://overwatch2-static.playoverwatch.com/5247d533591a956bf54ba216fba501ecb081356d/static/images/share.jpg",
+      "title": "Na história do jogo, quem fazia parte da Overwatch antes dela acabar?",
+      "description": "Vocês estão comigo?",
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Winston, Reaper, Soldado 76, Mercy, Ana, Genji, Tracer, Reinhardt e Tobjorn",
+        "Reaper, Sombra, Widowmaker, Doomfist, Moira e Baptiste",
+        "Bastion, Brigitte, Reinhardt, Echo, Winston, Ana, D.va e Lúcio",
+        "Winston, Doomfist, Genji e Hanzo"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://overwatch2-static.playoverwatch.com/5247d533591a956bf54ba216fba501ecb081356d/static/images/share.jpg",
+      "title": "Qual o personagem que é popular pela fala 'boop!'?",
+      "description": "Boop!",
+      "answer": 1,
+      "alternatives": ["Lúcio", "Sombra", "D.va", "Tracer"]
+    },
+    {
+      "image": "https://overwatch2-static.playoverwatch.com/5247d533591a956bf54ba216fba501ecb081356d/static/images/share.jpg",
+      "title": "No jogo, há dois heróis que são irmãos. Quem são eles?",
+      "description": "Eu preciso de cura!",
+      "answer": 2,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Tobjorn e Brigitte",
+        "Reaper e Soldado 76",
+        "Genji e Hanzo",
+        "Mercy e Moira"
+      ]
+    },
+    {
+      "image": "https://overwatch2-static.playoverwatch.com/5247d533591a956bf54ba216fba501ecb081356d/static/images/share.jpg",
+      "title": "Ana possui uma filha. Qual o seu nome?",
+      "description": "Estou te protegendo daqui...",
+      "answer": 3,
+      "alternatives": [
+        "Pharah apenas",
+        "Farea Amari",
+        "Pharah Amari",
+        "Fareeha Amari"
       ]
     }
   ],
-  "external": [
-    ""
-  ],
+  "external": [""],
   "theme": {
     "colors": {
       "primary": "#007DD1",

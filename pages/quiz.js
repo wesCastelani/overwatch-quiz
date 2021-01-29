@@ -5,6 +5,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForms';
 import Button from '../src/components/Button';
+import { useState } from 'react';
 
 function ResultWidget({ results }) {
   return (
@@ -137,12 +138,14 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 export default function QuizPage() {
-  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
-  const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
-  const [currentQuestion, setCurrentQuestion] = React.useState(0);
+  const [screenState, setScreenState] = useState(screenStates.LOADING);
+  const [results, setResults] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [questions, setQuestions] = useState([]);
+
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = questions[questionIndex];
+  const totalQuestions = questions.length;
 
   function addResult(result) {
     // results.push(result);
@@ -154,7 +157,11 @@ export default function QuizPage() {
   // atualizado === willUpdate
   // morre === willUnmount
   React.useEffect(() => {
-    // fetch() ...
+    fetch('http://localhost:3000/api/db').then(async (res) => {
+      const response = await res.json();
+      setQuestions(response.questions);
+      console.log(questions);
+    });
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
     }, 1 * 1000);
