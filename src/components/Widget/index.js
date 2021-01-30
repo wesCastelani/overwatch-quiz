@@ -28,6 +28,10 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
+
+  * {
+    margin: 0;
+  }
 `;
 
 Widget.Topic = styled.a`

@@ -1,10 +1,10 @@
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForms';
-import Button from '../src/components/Button';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForms';
+import Button from '../../src/components/Button';
 import { useState } from 'react';
 
 function ResultWidget({ results }) {
